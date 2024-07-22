@@ -1,0 +1,149 @@
+﻿/* Definición de variables de color y otros estilos globales */
+:root {
+    --primary-color: 210, 50%, 50%;
+    --secondary-color: 240, 28%, 14%;
+    --background-color: 0, 0%, 95%;
+    --text-color: 213, 73%, 22%;
+    --navbar-width: 5em;
+    --transition-duration: 0.3s;
+    --font-family: "Roboto", sans-serif;
+}
+
+/* Configuración del modelo de caja para todos los elementos y pseudo-elementos */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el html y body */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-family);
+    background-color: hsl(var(--background-color));
+    color: hsl(var(--secondary-color));
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+    color: hsl(var(--primary-color));
+}
+
+    /* Estilo para los enlaces al pasar el cursor sobre ellos */
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Estilo para botones e inputs */
+button, input {
+    font-family: var(--font-family);
+}
+
+/* Estilos para la barra de navegación (navbar) */
+#navbar {
+    width: var(--navbar-width);
+    height: 100vh;
+    position: fixed;
+    background-color: hsl(var(--secondary-color));
+    transition: width var(--transition-duration);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+    /* Estilo para la barra de navegación al pasar el cursor sobre ella */
+    #navbar:hover {
+        width: 16em;
+    }
+
+/* Estilo para los ítems de la barra de navegación */
+.navbar-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para el logo y los ítems de la barra de navegación */
+.navbar-logo, .navbar-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo específico para el logo de la barra de navegación */
+.navbar-logo {
+    justify-content: center;
+    height: 5em;
+    background-color: hsl(var(--primary-color));
+}
+
+/* Estilo para los ítems de la barra de navegación */
+.navbar-item {
+    padding: 1em 0.5em;
+}
+
+/* Estilo para el contenido interno de los ítems de la barra de navegación */
+.navbar-item-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: hsl(var(--background-color), 40%);
+    padding: 1em;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+    /* Estilo para el contenido interno de los ítems de la barra de navegación al pasar el cursor sobre ellos */
+    .navbar-item-inner:hover {
+        background-color: hsl(var(--primary-color));
+        color: hsl(var(--background-color));
+    }
+
+/* Estilo para el contenedor de íconos dentro de los ítems de la barra de navegación */
+.navbar-item-inner-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--navbar-width) - 1em);
+}
+
+    /* Estilo para los íconos dentro del contenedor de íconos de los ítems de la barra de navegación */
+    .navbar-item-inner-icon-wrapper ion-icon {
+        font-size: 1.5em;
+    }
+
+/* Estilo para el texto del enlace dentro de la barra de navegación */
+.link-text {
+    display: none;
+    opacity: 0;
+    transition: opacity var(--transition-duration);
+}
+
+/* Estilo para mostrar el texto del enlace al pasar el cursor sobre la barra de navegación */
+#navbar:hover .link-text {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilos para el contenido principal de la página */
+#main {
+    margin-left: var(--navbar-width);
+    padding: 2em;
+    width: calc(100% - var(--navbar-width));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* Estilo para los encabezados dentro del contenido principal */
+    #main h1, #main h2, #main h3 {
+        margin: 0 0 1em 0;
+        text-align: center;
+    }
+
+    /* Estilo para los párrafos dentro del contenido principal */
+    #main p {
+        margin: 0 0 1em 0;
+    }

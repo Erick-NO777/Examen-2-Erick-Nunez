@@ -1,0 +1,26 @@
+﻿/* Espaciado general para el formulario */
+form {
+    margin: 20px;
+}
+
+/* Espaciado en la parte inferior de los elementos div */
+div {
+    margin-bottom: 10px;
+}
+
+/* Configuración del estilo para las etiquetas */
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Estilo para los campos de entrada de texto */
+input {
+    width: 200px;
+    padding: 5px;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px 20px;
+}

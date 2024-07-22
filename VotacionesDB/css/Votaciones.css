@@ -1,0 +1,33 @@
+﻿/* Votaciones.css */
+
+/* Estilo para los encabezados h1 en la página de votaciones */
+h1 {
+    color: #0F3460;
+}
+
+/* Estilo para el dropdown de candidatos (ddlCandidatos) */
+#ddlCandidatos {
+    width: 200px;
+    margin: 10px 0;
+}
+
+/* Estilo para el botón de votar (btnVotar) */
+#btnVotar {
+    background-color: #0F3460;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    /* Estilo para el botón de votar al pasar el cursor sobre él */
+    #btnVotar:hover {
+        background-color: #1A1A2E;
+    }
+
+/* Estilo para el label de mensaje (lblMensaje) */
+#lblMensaje {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FF0000;
+}

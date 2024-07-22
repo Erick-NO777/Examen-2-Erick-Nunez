@@ -1,0 +1,36 @@
+﻿/* Estilos para el GridView */
+#gvResultados {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+    /* Estilos para las celdas de la tabla (th y td) dentro del GridView */
+    #gvResultados th, #gvResultados td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Estilo para los encabezados de la tabla (th) dentro del GridView */
+    #gvResultados th {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* Estilo para las filas pares de la tabla (tr) dentro del GridView */
+    #gvResultados tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    /* Estilo para las filas de la tabla (tr) al pasar el cursor sobre ellas dentro del GridView */
+    #gvResultados tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Estilos para el Label de ganador */
+#lganador {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
